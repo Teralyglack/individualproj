@@ -1,0 +1,9 @@
+#pragma once
+#include <SDL.h>
+#include <cmath>
+#include <vector>
+#include <iostream>
+#include "Actor.h"
+#include "Triangle.h"
+#include "Rectangle.h"
+#include "Ellipse.h"
