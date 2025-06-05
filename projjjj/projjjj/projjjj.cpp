@@ -8,6 +8,8 @@
 #include "Ellipse.h"
 #include "primitive.h"
 
+
+
 struct Primitive {
     enum Type { Actor, Ellipse, Rectangle, Triangle } type;
     int x, y;           // Центр

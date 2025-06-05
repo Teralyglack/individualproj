@@ -1,6 +1,7 @@
 #include "Ellipse.h"
 
 void DrawEllipse(SDL_Renderer* renderer, int cx, int cy, int rx, int ry, SDL_Color color) {
+    color = { 0, 255, 0, 255 };
     SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
     for (int w = -rx; w <= rx; w++) {
         int h = (int)(ry * sqrt(1.0 - (double)(w * w) / (rx * rx)));

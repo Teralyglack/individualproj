@@ -2,6 +2,7 @@
 
 
 void DrawTriangle(SDL_Renderer* renderer, int cx, int cy, int size, SDL_Color color) {
+    color = { 0, 0, 255, 255 };
     SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
     SDL_Point points[4] = {
         { cx, cy - size / 2 },

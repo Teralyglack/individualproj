@@ -1,6 +1,7 @@
 #include "Actor.h"
 
 void DrawCircle(SDL_Renderer* renderer, int cx, int cy, int r, SDL_Color color) {
+    color = { 128, 0, 128, 255 };
     SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
     for (int w = -r; w <= r; w++) {
         for (int h = -r; h <= r; h++) {

@@ -2,6 +2,7 @@
 #include "Rectangle.h"
 
 void DrawRect(SDL_Renderer* renderer, int cx, int cy, int w, int h, SDL_Color color) {
+    color = { 255, 0, 255, 255 };
     SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
     SDL_Rect rect = { cx - w / 2, cy - h / 2, w, h };
     SDL_RenderDrawRect(renderer, &rect);
